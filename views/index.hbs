@@ -1,0 +1,9 @@
+<h3 class="mt-5">Select language</h3>
+{{#if error}}
+<p class="text-danger">Couldn't generate a postcard. Try again later</p>
+{{/if}}
+<div class="list-group mt-3">
+  {{#each languages}}
+  <a href="/postcard/{{short}}" class="list-group-item list-group-item-dark">{{full}}</a>
+  {{/each}}
+</div>
